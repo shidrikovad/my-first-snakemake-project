@@ -1,0 +1,35 @@
+Assuming unrestricted shared filesystem usage.
+host: DESKTOP-4OH91MG
+Building DAG of jobs...
+Provided cores: 1 (use --cores to define parallelism)
+Rules claiming more threads will be scaled down.
+Job stats:
+job            count
+-----------  -------
+all                1
+make_result        1
+total              2
+
+Select jobs to execute...
+Execute 1 jobs...
+[Wed Dec 17 22:29:03 2025]
+localrule make_result:
+    output: result.txt
+    jobid: 1
+    reason: Missing output files: result.txt; Code has changed since last execution
+    resources: tmpdir=C:\Users\DASHA\AppData\Local\Temp
+[Wed Dec 17 22:29:03 2025]
+Finished jobid: 1 (Rule: make_result)
+1 of 2 steps (50%) done
+Select jobs to execute...
+Execute 1 jobs...
+[Wed Dec 17 22:29:03 2025]
+localrule all:
+    input: result.txt
+    jobid: 0
+    reason: Input files updated by another job: result.txt
+    resources: tmpdir=C:\Users\DASHA\AppData\Local\Temp
+[Wed Dec 17 22:29:03 2025]
+Finished jobid: 0 (Rule: all)
+2 of 2 steps (100%) done
+Complete log(s): C:\Users\DASHA\Documents\my-first-snakemake-project\.snakemake\log\2025-12-17T222902.850064.snakemake.log
