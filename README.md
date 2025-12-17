@@ -19,10 +19,14 @@ pip install snakemake
 snakemake --cores 1
 cat result.txt
 ```
-After running the workflow, the file result.txt will contain:
+
+## Expected Output
+After running the workflow, the file `result.txt` will contain:
 
 ```=== Snakemake Workflow ===
 Assignment completed successfully!
-[Current date and time]```
+[Current date and time]
+```
+
 Author: Daria Shidrikova
 Date: December 2025
